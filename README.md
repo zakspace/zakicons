@@ -24,7 +24,7 @@
   * `@zak-icons/react`: Tree-shakeable React 18 & 19 components with full TypeScript support.
   * `ZakIcons.Blazor`: Native Razor components for .NET 8 & 9.
   * `zak_icons`: Flutter Dart package supporting customizable sizes, colors, and opacity.
-  * `@zak-icons/web`: W3C Custom Element `<zak-icon>` for standard HTML and any web framework.
+  * `@zak-icons/css`: CSS classes for standard HTML and any web framework.
 * **Interactive Showcase & Documentation**: Instant Fuse.js search, real-time playground, live size/stroke/rotation customizer, and framework code generator.
 
 ---
@@ -37,7 +37,7 @@
 | [`@zak-icons/react`](./packages/react) | React | TypeScript / JSX | 320+ React components with tree-shaking |
 | [`ZakIcons.Blazor`](./packages/blazor) | .NET Blazor | C# / Razor | Native Razor components for .NET 8/9 |
 | [`zak_icons`](./packages/flutter) | Flutter | Dart | Flutter vector icon widget & constants |
-| [`@zak-icons/web`](./packages/web) | Web Components | TypeScript / JS | Custom Elements `<zak-icon>` |
+| [`@zak-icons/css`](./packages/css) | CSS | CSS | CSS classes for icons |
 
 ---
 
@@ -101,19 +101,29 @@ Widget build(BuildContext context) {
 }
 ```
 
-### 4. Web Components
+### 4. CSS
 
-```bash
-npm install @zak-icons/web
+```bash 
+npm install @zak-icons/css
+# or 
+pnpm add @zak-icons/css
+# or 
+yarn add @zak-icons/css
 ```
 
 ```html
-<script type="module" src="./node_modules/@zak-icons/web/dist/index.js"></script>
-
-<zak-icon name="truck" size="32" color="#0284c7" stroke-width="1.5"></zak-icon>
-<zak-icon name="container" size="24"></zak-icon>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@zak-icons/css/dist/zak-icons.css" />
+```
+In `main.css`:
+```css
+import "https://cdn.jsdelivr.net/npm/@zak-icons/css/dist/zak-icons.css";
 ```
 
+In Html View:
+```html
+<i class="zak zak-truck" style="font-size: 32px; color: #0284c7;"></i>
+<i class="zak zak-container" style="font-size: 24px;"></i>
+```
 ### 5. Raw SVG
 
 Every SVG icon is located in `/icons/<category>/<name>.svg` and adheres to:
