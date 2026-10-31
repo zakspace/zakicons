@@ -101,7 +101,7 @@ export function Navbar({ onOpenSearch }: NavbarProps) {
 
           {/* GitHub Link */}
           <a
-            href="https://github.com/zak-icons/zak-icons"
+            href="https://github.com/zakspace/zakicons"
             target="_blank"
             rel="noreferrer"
             className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"

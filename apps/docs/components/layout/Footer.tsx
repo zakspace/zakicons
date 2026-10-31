@@ -113,7 +113,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/zak-icons/zak-icons"
+                  href="https://github.com/zakspace/zakicons"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-foreground transition-colors"
